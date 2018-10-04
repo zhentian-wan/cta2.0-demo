@@ -4,6 +4,7 @@ import logo, {
 } from "./logo.svg";
 
 import './App.scss';
+import styles from './styles.module.css';
 
 class App extends Component {
   render() {
@@ -23,6 +24,14 @@ class App extends Component {
           >
             Learn React
           </a>
+            <a
+                className={styles['error']}
+                href="https://reactjs.org"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Learn React
+            </a>
         </header>
       </div>
     );
