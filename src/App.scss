@@ -7,6 +7,23 @@
   height: 40vmin;
 }
 
+.App-logo-svg {
+  height: 40vmin;
+  & g {
+    fill: salmon;
+  }
+
+  & path {
+    stroke: palegoldenrod;
+    fill: none;
+    stroke-width: 10px;
+    stroke-dasharray: 35px 15px;
+    animation: orbit 1s infinite linear;
+  }
+}
+
+@keyframes orbit { to { stroke-dashoffset: 50px; } }
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
